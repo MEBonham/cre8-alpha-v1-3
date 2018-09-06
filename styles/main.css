@@ -1,0 +1,18 @@
+/* Variables */
+/* Eric Meyer Reset */
+/* Box-Sizing Setting */
+* {
+  box-sizing: border-box;
+}
+/* Main CSS */
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  background: linear-gradient(30deg, #dbdbdb, #d9e6fc);
+}
+.page-container {
+  height: calc(100vh - 2*7px);
+}
