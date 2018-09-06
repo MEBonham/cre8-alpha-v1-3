@@ -168,7 +168,7 @@ body {
   background: #96b1df;
   box-shadow: 0 0 7px black;
   font-size: 1.6rem;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Times New Roman", serif;
 }
 .page-container h1 {
   font-size: 3.84rem;
@@ -206,14 +206,15 @@ body {
   align-items: flex-end;
 }
 .page-container > header .main-nav a {
-  margin: 0 0.4%;
+  margin: 0 0.6%;
+  padding: 5px 1.2rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 15px 10px;
   border-width: 2px 2px 0 2px;
   background: lightgray;
+  font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-size: 1.8rem;
   text-decoration: none;
-  padding: 7px 1.2rem;
 }
 .content {
   display: flex;
