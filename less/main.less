@@ -4,6 +4,8 @@
 @alto-gray: #dbdbdb;
 @main-background: #96b1df;
 @titleFontStack: "Savor", "Verdana", sans-serif;
+@headerFontStack: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
+@baseFontStack: "Garamond", "Times New Roman", serif;
 @pageShadowWidth: 7px;
 
 /* Fonts and Animations */
@@ -102,6 +104,7 @@ body {
     background: @main-background;
     box-shadow: 0 0 @pageShadowWidth black;
     font-size: 1.6rem;
+    font-family: @baseFontStack;
 
     h1 {
         font-size: 3.84rem;
@@ -129,7 +132,7 @@ body {
 
             p {
                 margin-left: 1rem;
-                font-size: 1.76rem;
+                font-size: 1.8rem;
                 font-weight: bold;
                 font-style: italic;
                 animation-name: fade-in;
@@ -138,9 +141,21 @@ body {
         }
 
         .main-nav {
+            background: url("../assets/mainpic.jpg");
             height: 12rem;
             display: flex;
             align-items: flex-end;
+
+            a {
+                margin: 0 0.4%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 15px 10px;
+                border-width: 2px 2px 0 2px;
+                background: lightgray;
+                font-size: 1.8rem;
+                text-decoration: none;
+                padding: 7px 1.2rem;
+            }
         }
     }
 }
