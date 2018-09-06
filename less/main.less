@@ -7,6 +7,8 @@
 @headerFontStack: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
 @baseFontStack: "Times New Roman", serif;
 @pageShadowWidth: 7px;
+@mainpicHeight: 12rem;
+@contentHeight: calc(100vh - 2*@pageShadowWidth - @mainpicHeight - 10rem);
 
 /* Fonts and Animations */
 @font-face {
@@ -157,6 +159,7 @@ body {
                 border-top-right-radius: 15px 10px;
                 border-width: 2px 2px 0 2px;
                 border-style: solid;
+                border-color: black;
                 background: lightgray;
                 font-family: @headerFontStack;
                 font-size: 1.8rem;
@@ -191,9 +194,11 @@ body {
 
     .sidebar {
         width: 40%;
+        height: @contentHeight;
     }
 
     .main-content {
         width: 60%;
+        height: @contentHeight;
     }
 }

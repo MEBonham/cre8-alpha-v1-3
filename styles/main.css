@@ -215,6 +215,7 @@ body {
   border-top-right-radius: 15px 10px;
   border-width: 2px 2px 0 2px;
   border-style: solid;
+  border-color: black;
   background: lightgray;
   font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-size: 1.8rem;
@@ -241,7 +242,9 @@ body {
 }
 .content .sidebar {
   width: 40%;
+  height: calc(100vh - 2*7px - 12rem - 10rem);
 }
 .content .main-content {
   width: 60%;
+  height: calc(100vh - 2*7px - 12rem - 10rem);
 }
