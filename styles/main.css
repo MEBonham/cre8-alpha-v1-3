@@ -144,9 +144,9 @@ body {
   background-attachment: fixed;
 }
 .page-container {
-  width: calc(99%-2*7px);
+  width: calc(95%-2*7px);
   max-width: 1024px;
-  height: calc(99vh - 2*7px);
+  height: calc(100vh - 2*7px);
   margin: 7px auto;
   border-radius: 15px;
   background: #96b1df;
