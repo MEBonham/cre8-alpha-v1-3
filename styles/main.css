@@ -151,4 +151,14 @@ body {
   border-radius: 15px;
   background: #96b1df;
   box-shadow: 0 0 7px black;
+  font-size: 1.6rem;
+}
+.page-container > header {
+  display: flex;
+  flex-direction: column;
+}
+.page-container > header .main-nav {
+  height: 12rem;
+  display: flex;
+  align-items: flex-end;
 }

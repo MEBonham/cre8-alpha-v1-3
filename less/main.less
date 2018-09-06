@@ -82,4 +82,16 @@ body {
     border-radius: 15px;
     background: @main-background;
     box-shadow: 0 0 @pageShadowWidth black;
+    font-size: 1.6rem;
+
+    &> header {
+        display: flex;
+        flex-direction: column;
+
+        .main-nav {
+            height: 12rem;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
 }
