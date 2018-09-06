@@ -210,7 +210,7 @@ body {
 }
 .page-container > header .main-nav a {
   margin: 0 0.6%;
-  padding: 5px 1.2rem;
+  padding: 5px 1.2rem 3px;
   border-top-left-radius: 5px;
   border-top-right-radius: 15px 10px;
   border-width: 2px 2px 0 2px;
@@ -218,7 +218,7 @@ body {
   font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-size: 1.8rem;
 }
-.page-container > header .main-nav .selected-main-tab {
+.page-container > header .main-nav #selected-main-tab {
   background: #96b1df;
 }
 .page-container > footer {
