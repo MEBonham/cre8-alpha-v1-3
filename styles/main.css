@@ -17,7 +17,7 @@ body {
 .page-container {
   width: 100%;
   max-width: 1024px;
-  height: calc(100vh - 2*7px);
-  margin: 7px auto;
+  height: calc(100vh - 2*15px);
+  margin: 15px auto;
   border: 1px solid red;
 }
