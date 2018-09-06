@@ -27,7 +27,7 @@
         opacity: 1;
     }
 }
-    
+
 /* Eric Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -112,6 +112,11 @@ body {
         font-size: 3.8rem;
         font-weight: bold;
         font-family: @titleFontStack;
+    }
+
+    h2, h3, h4, h5 {
+        font-family: @headerFontStack;
+        font-weight: bold;
     }
 
     a {
@@ -200,5 +205,6 @@ body {
     .main-content {
         width: 60%;
         height: @contentHeight;
+        padding: 15px 25px;
     }
 }

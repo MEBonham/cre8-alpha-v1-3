@@ -175,6 +175,13 @@ body {
   font-weight: bold;
   font-family: "Savor", "Verdana", sans-serif;
 }
+.page-container h2,
+.page-container h3,
+.page-container h4,
+.page-container h5 {
+  font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
+  font-weight: bold;
+}
 .page-container a {
   text-decoration: none;
 }
@@ -247,4 +254,5 @@ body {
 .content .main-content {
   width: 60%;
   height: calc(100vh - 2*7px - 12rem - 10.4rem);
+  padding: 15px 25px;
 }
