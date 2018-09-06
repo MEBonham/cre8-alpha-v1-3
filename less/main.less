@@ -2,6 +2,7 @@
 /* Variables */
 @hawkes-blue: #d9e6fc;
 @alto-gray: #dbdbdb;
+@main-background: #96b1df;
 @pageShadowWidth: 7px;
 
 /* Eric Meyer Reset */
@@ -75,9 +76,11 @@ body {
 }
 
 .page-container {
-    width: 100%;
+    width: calc(100%- 2*@pageShadowWidth);
     max-width: 1024px;
     height: calc(100vh - 2*@pageShadowWidth);
     margin: @pageShadowWidth auto;
-    border: 1px solid red;
+    border-radius: 15px;
+    background: @main-background;
+    box-shadow: 0 0 @pageShadowWidth black;
 }
