@@ -171,7 +171,7 @@ body {
   font-family: "Times New Roman", serif;
 }
 .page-container h1 {
-  font-size: 3.84rem;
+  font-size: 3.8rem;
   font-weight: bold;
   font-family: "Savor", "Verdana", sans-serif;
 }
@@ -214,11 +214,12 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 15px 10px;
   border-width: 2px 2px 0 2px;
+  border-style: solid;
   background: lightgray;
   font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-size: 1.8rem;
 }
-.page-container > header .main-nav #selected-main-tab {
+.page-container > header .main-nav a.selected-main-tab {
   background: #96b1df;
 }
 .page-container > footer {
