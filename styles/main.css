@@ -10,16 +10,18 @@ body {
 }
 /* Main CSS */
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 body {
+  height: 100%;
   background: linear-gradient(30deg, #dbdbdb, #d9e6fc);
   background-attachment: fixed;
 }
 .page-container {
   width: 100%;
   max-width: 1024px;
-  height: calc(100vh - 2*15px);
-  margin: 15px auto;
+  height: calc(100vh - 2*7px);
+  margin: 7px auto;
   border: 1px solid red;
 }
