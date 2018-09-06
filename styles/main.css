@@ -175,6 +175,9 @@ body {
   font-weight: bold;
   font-family: "Savor", "Verdana", sans-serif;
 }
+.page-container a {
+  text-decoration: none;
+}
 .page-container > header {
   display: flex;
   flex-direction: column;
@@ -214,7 +217,22 @@ body {
   background: lightgray;
   font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-size: 1.8rem;
-  text-decoration: none;
+}
+.page-container > header .main-nav .selected-main-tab {
+  background: #96b1df;
+}
+.page-container > footer {
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.page-container > footer ul {
+  list-style: none;
+  display: flex;
+}
+.page-container > footer li {
+  margin: 0 0.5rem;
 }
 .content {
   display: flex;
