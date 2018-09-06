@@ -3,8 +3,27 @@
 @hawkes-blue: #d9e6fc;
 @alto-gray: #dbdbdb;
 @main-background: #96b1df;
+@titleFontStack: "Savor", "Verdana", sans-serif;
 @pageShadowWidth: 7px;
 
+/* Fonts and Animations */
+@font-face {
+    font-family: Savor;
+    src: url("Savor.ttf");
+}
+  
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    
 /* Eric Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -84,9 +103,39 @@ body {
     box-shadow: 0 0 @pageShadowWidth black;
     font-size: 1.6rem;
 
+    h1 {
+        font-size: 3.84rem;
+        font-weight: bold;
+        font-family: @titleFontStack;
+    }
+
     &> header {
         display: flex;
         flex-direction: column;
+
+        &> header {
+            display: flex;
+            align-items: center;
+
+            .site-icon {
+                width: 6rem;
+                height: auto;
+                margin: 10px 10px 10px 15px;
+            }
+
+            .title-and-slogan {
+                margin-left: 10px;
+            }
+
+            p {
+                margin-left: 1rem;
+                font-size: 1.76rem;
+                font-weight: bold;
+                font-style: italic;
+                animation-name: fade-in;
+                animation-duration: 5s;
+            }
+        }
 
         .main-nav {
             height: 12rem;

@@ -1,4 +1,20 @@
 /* Variables */
+/* Fonts and Animations */
+@font-face {
+  font-family: Savor;
+  src: url("Savor.ttf");
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Eric Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -153,9 +169,34 @@ body {
   box-shadow: 0 0 7px black;
   font-size: 1.6rem;
 }
+.page-container h1 {
+  font-size: 3.84rem;
+  font-weight: bold;
+  font-family: "Savor", "Verdana", sans-serif;
+}
 .page-container > header {
   display: flex;
   flex-direction: column;
+}
+.page-container > header > header {
+  display: flex;
+  align-items: center;
+}
+.page-container > header > header .site-icon {
+  width: 6rem;
+  height: auto;
+  margin: 10px 10px 10px 15px;
+}
+.page-container > header > header .title-and-slogan {
+  margin-left: 10px;
+}
+.page-container > header > header p {
+  margin-left: 1rem;
+  font-size: 1.76rem;
+  font-weight: bold;
+  font-style: italic;
+  animation-name: fade-in;
+  animation-duration: 5s;
 }
 .page-container > header .main-nav {
   height: 12rem;
