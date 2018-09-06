@@ -162,3 +162,13 @@ body {
   display: flex;
   align-items: flex-end;
 }
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.content .sidebar {
+  width: 40%;
+}
+.content .main-content {
+  width: 60%;
+}
