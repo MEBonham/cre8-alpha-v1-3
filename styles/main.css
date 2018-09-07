@@ -260,9 +260,5 @@ body {
   height: calc(100vh - 2*7px - 12rem - 12.4rem);
   margin-top: 15px;
   padding: 5px 2.3% 10px;
-  overflow: hidden;
-}
-.content .main-content .hide-scrollbar {
-  overflow: auto;
-  padding-right: 28px;
+  overflow-y: auto;
 }
