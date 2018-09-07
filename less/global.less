@@ -1,0 +1,35 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(150deg, @backdrop-1, @backdrop-2);
+    background-attachment: fixed;
+}
+
+.page-container {
+    width: calc(100vw- 2*@pageShadowWidth);
+    max-width: 1024px;
+    height: calc(100vh - 2*@pageShadowWidth);
+    margin: @pageShadowWidth auto;
+    border-radius: 15px;
+    background: @main-bg;
+    box-shadow: 0 0 @pageShadowWidth black;
+    font-size: 1.6rem;
+    font-family: @baseFontStack;
+}
+
+h2, h3, h4, h5 {
+    font-family: @headerFontStack;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}

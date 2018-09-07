@@ -14,10 +14,12 @@
     opacity: 1;
   }
 }
+/* Variables and Mixins */
 /* Colors */
 /* Color Assignments */
 /* Font-Stacks */
 /* Layout Dimensions */
+/* Reset */
 /* Eric Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -149,11 +151,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Box-Sizing Setting */
+/* Global */
 * {
   box-sizing: border-box;
 }
-/* Main CSS */
 html {
   height: 100%;
   font-size: 62.5%;
@@ -173,20 +174,21 @@ body {
   font-size: 1.6rem;
   font-family: "Times New Roman", serif;
 }
-.page-container h1 {
-  font-size: 3.8rem;
-  font-weight: bold;
-  font-family: "Savor", "Verdana", sans-serif;
-}
-.page-container h2,
-.page-container h3,
-.page-container h4,
-.page-container h5 {
+h2,
+h3,
+h4,
+h5 {
   font-family: "Trebuchet MS", "Verdana", "Helvetica", sans-serif;
   font-weight: bold;
 }
-.page-container a {
+a {
   text-decoration: none;
+}
+/* Main Page Elements */
+h1 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  font-family: "Savor", "Verdana", sans-serif;
 }
 .page-container > header {
   display: flex;
@@ -233,6 +235,15 @@ body {
 .page-container > header .main-nav a.selected-main-tab {
   background: #96b1df;
 }
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.content .sidebar {
+  width: 40%;
+  height: calc(100vh - 2*7px - 12rem - 12.4rem);
+  overflow-y: auto;
+}
 .page-container > footer {
   padding-top: 0.8rem;
   display: flex;
@@ -261,4 +272,19 @@ body {
   margin-top: 15px;
   padding: 5px 2.3% 10px;
   overflow-y: auto;
+}
+.content .main-content .art-showcase {
+  width: 95%;
+  padding: 4px;
+  margin: 20px auto 5px;
+  border-radius: 5px;
+  background-color: lightgray;
+  box-shadow: -2px -2px 5px 2px black;
+}
+.content .main-content .art-showcase img {
+  width: 100%;
+  height: auto;
+}
+.content .main-content .art-showcase figcaption {
+  text-align: center;
 }

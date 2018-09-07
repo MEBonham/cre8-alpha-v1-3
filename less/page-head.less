@@ -1,0 +1,59 @@
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    font-family: @titleFontStack;
+}
+
+.page-container > header {
+    display: flex;
+    flex-direction: column;
+
+    &> header {
+        display: flex;
+        align-items: center;
+
+        .site-icon {
+            width: 6rem;
+            height: auto;
+            margin: 10px 10px 10px 15px;
+        }
+
+        .title-and-slogan {
+            margin-left: 10px;
+        }
+
+        p {
+            margin-left: 1rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-style: italic;
+            animation-name: fade-in;
+            animation-duration: 5s;
+        }
+    }
+
+    .main-nav {
+        background: url("../assets/mainpic.jpg");
+        height: 12rem;
+        display: flex;
+        align-items: flex-end;
+
+        a {
+            margin: 0 0.6%;
+            padding: 5px 1.2rem 3px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 15px 10px;
+            border-width: 2px 2px 0 2px;
+            border-style: solid;
+            border-color: black;
+            background: lightgray;
+            font-family: @headerFontStack;
+            font-size: 1.8rem;
+        }
+
+        a.selected-main-tab {
+            background: @main-bg;
+        }
+    }
+}
