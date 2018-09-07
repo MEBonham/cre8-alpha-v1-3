@@ -8,7 +8,10 @@
   <title>CRE8 RPG: Alpha</title>
 
   <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/jquery.mCustomScrollbar.css" />
 
+  <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
   <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -41,9 +44,9 @@
       
       <section class="sidebar">
         <div class="quote">
-            <blockquote>Fairy tales do not tell children the dragons exist. Children already know that dragons exist. Fairy tales tell children the dragons can be killed.</blockquote>
-            <cite>-G.K. Chesterton</cite>
-          </div> <!-- Chesterton quote -->
+          <blockquote>Fairy tales do not tell children the dragons exist. Children already know that dragons exist. Fairy tales tell children the dragons can be killed.</blockquote>
+          <cite>-G.K. Chesterton</cite>
+        </div> <!-- Chesterton quote -->
       </section> <!-- sidebar -->
 
       <section class="main-content">
@@ -68,5 +71,14 @@
     </footer>
 
   </div> <!-- page-container -->
+
+  <script>
+    (function($){
+      $(window).on("load",function(){
+        $(".main-content").mCustomScrollbar({ theme: "minimal" });
+        $(".sidebar").mCustomScrollbar({ theme: "minimal" });
+      });
+    })(jQuery);
+  </script>
 </body>
 </html>
