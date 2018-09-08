@@ -9,8 +9,13 @@ html {
 }
 
 body {
-    background: linear-gradient(150deg, @backdrop-1, @backdrop-2);
     background-attachment: fixed;
+    background: linear-gradient(150deg, @backdrop-1, @backdrop-2);
+    background-size: 400% 400%;
+    -webkit-animation: vary-backdrop 30s ease infinite;
+    -moz-animation: vary-backdrop 30s ease infinite;
+    -o-animation: vary-backdrop 30s ease infinite;
+    animation: vary-backdrop 30s ease infinite;
 }
 
 .page-container {
