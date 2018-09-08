@@ -35,9 +35,16 @@ h1 {
 
     .main-nav {
         background: url("../assets/mainpic.jpg");
-        height: 12rem;
+        height: @mainPicHeight;
         display: flex;
         align-items: flex-end;
+
+        @media @tablet {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
 
         a {
             margin: 0 0.6%;
@@ -49,6 +56,12 @@ h1 {
             background: lightgray;
             font-family: @headerFontStack;
             font-size: 1.8rem;
+
+            @media @tablet {
+                padding: 5px 1.2rem;
+                .border-radii(5px, 15px 10px, 5px, 15px 10px);
+                border-width: 2px;
+            }
         }
 
         a.selected-main-tab {
