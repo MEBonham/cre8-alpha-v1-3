@@ -95,8 +95,11 @@
   <script>
     (function($){
       $(window).on("load",function(){
-        $(".main-content").mCustomScrollbar({ theme: "minimal" });
-        $(".sidebar").mCustomScrollbar({ theme: "minimal" });
+        let w = $("body").width();
+        if (w > 500) {
+          $(".main-content").mCustomScrollbar({ theme: "minimal" });
+          $(".sidebar").mCustomScrollbar({ theme: "minimal" });
+        }
       });
     })(jQuery);
   </script>
