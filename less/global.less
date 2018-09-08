@@ -28,6 +28,10 @@ body {
     .box-shadow(0 0 @pageShadowWidth black);
     font-size: 1.6rem;
     font-family: @baseFontStack;
+
+    @media @phone {
+        height: auto;
+    }
 }
 
 h2, h3, h4, h5 {
