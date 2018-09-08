@@ -302,6 +302,7 @@ h1 {
 }
 @media screen and (max-width: 991px) {
   .page-container > header .main-nav {
+    height: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
