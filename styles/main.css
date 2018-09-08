@@ -250,6 +250,11 @@ h1 {
   font-weight: bold;
   font-family: "Savor", "Verdana", sans-serif;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 .page-container > header {
   display: flex;
   flex-direction: column;
@@ -263,6 +268,11 @@ h1 {
   height: auto;
   margin: 10px 10px 10px 15px;
 }
+@media (max-width: 500px) {
+  .page-container > header > header .site-icon {
+    width: 3rem;
+  }
+}
 .page-container > header > header .title-and-slogan {
   margin-left: 10px;
 }
@@ -273,6 +283,11 @@ h1 {
   font-style: italic;
   animation-name: fade-in;
   animation-duration: 5s;
+}
+@media (max-width: 500px) {
+  .page-container > header > header p {
+    display: none;
+  }
 }
 .page-container > header .main-nav {
   background: url("../assets/mainpic.jpg");
@@ -341,11 +356,22 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .content {
+    flex-direction: column;
+  }
+}
 .content .sidebar {
   width: 40%;
   height: calc(100vh - 2*7px - 12rem - 12.4rem);
   overflow-y: auto;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .content .sidebar {
+    width: 100%;
+    height: auto;
+  }
 }
 .content .sidebar:after {
   content: "";
@@ -362,6 +388,12 @@ h1 {
   margin-top: 15px;
   padding: 5px 2.3% 0;
   overflow-y: auto;
+}
+@media (max-width: 500px) {
+  .main-content {
+    width: 100%;
+    height: auto;
+  }
 }
 .main-content h2,
 .main-content h3,

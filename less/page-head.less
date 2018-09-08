@@ -3,6 +3,10 @@ h1 {
     font-size: 3.8rem;
     font-weight: bold;
     font-family: @titleFontStack;
+
+    @media @phone {
+        font-size: 2rem;
+    }
 }
 
 .page-container > header {
@@ -17,6 +21,10 @@ h1 {
             width: 6rem;
             height: auto;
             margin: 10px 10px 10px 15px;
+
+            @media @phone {
+                width: 3rem;
+            }
         }
 
         .title-and-slogan {
@@ -30,6 +38,10 @@ h1 {
             font-style: italic;
             animation-name: fade-in;
             animation-duration: 5s;
+
+            @media @phone {
+                display: none;
+            }
         }
     }
 
