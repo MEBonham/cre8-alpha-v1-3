@@ -514,6 +514,11 @@ h1 {
 #accordion .accordion-content.accordion-default {
   display: block;
 }
+@media screen and (max-width: 500px) {
+  #accordion .accordion-content.accordion-default {
+    display: none;
+  }
+}
 #accordion .green {
   background: #217c2a;
 }
