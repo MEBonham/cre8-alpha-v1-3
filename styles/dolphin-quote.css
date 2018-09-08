@@ -1,0 +1,25 @@
+@font-face {
+    font-family: dolphin;
+    src: url("Dolphin Normal.ttf");
+  }
+  
+  /* Page-Specific Element: Sidebar Quotation */
+  .sidebar .quote {
+    margin: 20px 15px 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: lightgray;
+    box-shadow: -2px -2px 5px 2px black;
+    font-family: "dolphin", "cursive", sans-serif;
+    font-weight: bold;
+    font-size: 1.92rem;
+  }
+  
+  .sidebar blockquote {
+    font-style: italic;
+  }
+  
+  .sidebar cite {
+    display: block;
+    text-align: right;
+  }

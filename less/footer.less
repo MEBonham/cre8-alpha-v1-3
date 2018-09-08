@@ -4,6 +4,17 @@
     display: flex;
     justify-content: center;
     font-size: 1.3rem;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: @section-borders;
+        height: 1px;
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        top: -1px;
+    }
 
     ul {
         list-style: none;

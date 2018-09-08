@@ -1,6 +1,6 @@
 
 * {
-    box-sizing: border-box;
+    .box-sizing();
 }
 
 html {
@@ -23,9 +23,9 @@ body {
     max-width: 1024px;
     height: calc(100vh - 2*@pageShadowWidth);
     margin: @pageShadowWidth auto;
-    border-radius: 15px;
+    .border-radius(15px);
     background: @main-bg;
-    box-shadow: 0 0 @pageShadowWidth black;
+    .box-shadow(0 0 @pageShadowWidth black);
     font-size: 1.6rem;
     font-family: @baseFontStack;
 }

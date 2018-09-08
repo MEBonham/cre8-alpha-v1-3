@@ -4,42 +4,12 @@
     font-family: Savor;
     src: url("Savor.ttf");
 }
-  
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-@-webkit-keyframes vary-backdrop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes vary-backdrop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-o-keyframes vary-backdrop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes vary-backdrop {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+@import "keyframes";
 
 /* Variables and Mixins */
 @import "variables";
+@import "mixin";
 
 /* Reset */
 @import "reset";
@@ -52,3 +22,7 @@
 @import "sidebar";
 @import "main-content";
 @import "footer";
+
+/* Modular Page Elements */
+@import "accordion";
+@import "art-showcase";

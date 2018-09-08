@@ -1,0 +1,94 @@
+
+#accordion {
+    margin: 0 8px;
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    .accordion-toggle {
+        .border-radii(10px, 10px);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        padding: 7px;
+        .box-shadow(0 0 7px black);
+    }
+
+    .accordion-content {
+        padding: 5px 20px;
+        border-width: 0 2px 2px 2px;
+        border-style: solid;
+        .border-radii(0, 0, 10px, 10px);
+        .box-shadow(0 0 7px black);
+        display: none;
+
+        ul {
+            padding-left: 4rem;
+        }
+    }
+
+    .accordion-content.accordion-default {
+        display: block;
+    }
+
+    .green {
+        background: @green-accordion;
+    }
+
+    strong.green-text {
+        font-weight: bold;
+        color: @green-accordion;
+    }
+
+    .green-panel {
+        background: @green-acc-panel;
+        border-color: @green-accordion;
+    }
+
+    .gray {
+        background: @gray-accordion;
+    }
+
+    strong.gray-text {
+        font-weight: bold;
+        color: @gray-accordion;
+    }
+
+    .gray-panel {
+        background: @gray-acc-panel;
+        border-color: @gray-accordion;
+    }
+
+    .gold {
+        background: @gold-accordion;
+    }
+
+    strong.gold-text {
+        font-weight: bold;
+        color: @gold-accordion;
+    }
+
+    .gold-panel {
+        background: @gold-acc-panel;
+        border-color: @gold-accordion;
+    }
+
+    .red {
+        background: @red-accordion;
+    }
+
+    strong.red-text {
+        font-weight: bold;
+        color: @red-accordion;
+    }
+
+    .red-panel {
+        background: @red-acc-panel;
+        border-color: @red-accordion;
+    }
+}

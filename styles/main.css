@@ -63,6 +63,7 @@
 /* Color Assignments */
 /* Font-Stacks */
 /* Layout Dimensions */
+/* Cross-Browser Support */
 /* Reset */
 /* Eric Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -197,6 +198,8 @@ table {
 }
 /* Global */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -217,8 +220,15 @@ body {
   max-width: 1024px;
   height: calc(100vh - 2*7px);
   margin: 7px auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   background: #96b1df;
+  -webkit-box-shadow: 0 0 7px black;
+  -moz-box-shadow: 0 0 7px black;
   box-shadow: 0 0 7px black;
   font-size: 1.6rem;
   font-family: "Times New Roman", serif;
@@ -272,8 +282,21 @@ h1 {
 .page-container > header .main-nav a {
   margin: 0 0.6%;
   padding: 5px 1.2rem 3px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 15px 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 15px 10px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 15px 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   border-width: 2px 2px 0 2px;
   border-style: solid;
   border-color: black;
@@ -292,34 +315,60 @@ h1 {
   width: 40%;
   height: calc(100vh - 2*7px - 12rem - 12.4rem);
   overflow-y: auto;
+  padding: 5px;
+}
+.content .sidebar:after {
+  content: "";
+  background: gray;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  height: 84%;
+  bottom: 6%;
 }
 .main-content {
   width: 60%;
   height: calc(100vh - 2*7px - 12rem - 12.4rem);
   margin-top: 15px;
-  padding: 5px 2.3% 10px;
+  padding: 5px 2.3% 0;
   overflow-y: auto;
 }
-.main-content .art-showcase {
-  width: 95%;
-  padding: 4px;
-  margin: 20px auto 5px;
-  border-radius: 5px;
-  background-color: lightgray;
-  box-shadow: -2px -2px 5px 2px black;
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+  margin: 15px 0 8px;
 }
-.main-content .art-showcase img {
-  width: 100%;
-  height: auto;
+.main-content h2 {
+  font-size: 2.3rem;
 }
-.main-content .art-showcase figcaption {
-  text-align: center;
+.main-content h3 {
+  font-size: 2rem;
+}
+.main-content h4 {
+  font-size: 1.8rem;
+}
+.main-content h5 {
+  font-size: 1.6rem;
+}
+.main-content p {
+  margin: 5px 0;
 }
 .page-container > footer {
   padding-top: 0.8rem;
   display: flex;
   justify-content: center;
   font-size: 1.3rem;
+  position: relative;
+}
+.page-container > footer:before {
+  content: "";
+  background: gray;
+  height: 1px;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: -1px;
 }
 .page-container > footer ul {
   list-style: none;
@@ -327,4 +376,137 @@ h1 {
 }
 .page-container > footer li {
   margin: 0 0.5rem;
+}
+/* Modular Page Elements */
+#accordion {
+  margin: 0 8px;
+}
+#accordion h2 {
+  font-size: 1.8rem;
+}
+#accordion p {
+  margin: 5px 0;
+}
+#accordion .accordion-toggle {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 7px;
+  -webkit-box-shadow: 0 0 7px black;
+  -moz-box-shadow: 0 0 7px black;
+  box-shadow: 0 0 7px black;
+}
+#accordion .accordion-content {
+  padding: 5px 20px;
+  border-width: 0 2px 2px 2px;
+  border-style: solid;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 7px black;
+  -moz-box-shadow: 0 0 7px black;
+  box-shadow: 0 0 7px black;
+  display: none;
+}
+#accordion .accordion-content ul {
+  padding-left: 4rem;
+}
+#accordion .accordion-content.accordion-default {
+  display: block;
+}
+#accordion .green {
+  background: #217c2a;
+}
+#accordion strong.green-text {
+  font-weight: bold;
+  color: #217c2a;
+}
+#accordion .green-panel {
+  background: #a6d8ab;
+  border-color: #217c2a;
+}
+#accordion .gray {
+  background: gray;
+}
+#accordion strong.gray-text {
+  font-weight: bold;
+  color: gray;
+}
+#accordion .gray-panel {
+  background: #dbdbdb;
+  border-color: gray;
+}
+#accordion .gold {
+  background: #939b1b;
+}
+#accordion strong.gold-text {
+  font-weight: bold;
+  color: #939b1b;
+}
+#accordion .gold-panel {
+  background: #d9dd94;
+  border-color: #939b1b;
+}
+#accordion .red {
+  background: #8e240f;
+}
+#accordion strong.red-text {
+  font-weight: bold;
+  color: #8e240f;
+}
+#accordion .red-panel {
+  background: #d69e93;
+  border-color: #8e240f;
+}
+.main-content .art-showcase,
+.sidebar .art-showcase {
+  width: 95%;
+  padding: 4px;
+  margin: 20px auto 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: lightgray;
+  -webkit-box-shadow: -2px -2px 5px 2px black;
+  -moz-box-shadow: -2px -2px 5px 2px black;
+  box-shadow: -2px -2px 5px 2px black;
+}
+.main-content .art-showcase img,
+.sidebar .art-showcase img {
+  width: 100%;
+  height: auto;
+}
+.main-content .art-showcase figcaption,
+.sidebar .art-showcase figcaption {
+  text-align: center;
 }
